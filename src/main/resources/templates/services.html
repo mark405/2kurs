@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+    <a href="/info" class="logo-href"><img class="logo" th:src="@{/img/main-logo.svg}" alt="logo"></a>
+    <nav class="nav">
+        <ul class="nav__links">
+            <li><a href="/about">Про нас</a></li>
+            <li><a href="/services">Послуги</a></li>
+            <li><a href="/vacancy">Вакансії</a></li>
+        </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <a class="lang" href="#">UA</a>
+    </header>
+    <section class="main-services-section">
+         <h1 class="main-services-title">ПОСЛУГИ</h1>
+         <div class="main-services-block">
+            <h2 class="main-services-subtitle">ВЕБ-РОЗРОБКА</h2>
+        <p class="main-services-text">Ми маємо великий досвід у сфері веб-розробки: від нескладних веб додатків до високонавантажених маштабних проєктів. Багато років ми працюємо за напрямами хмарних обчислень та управління даними, а також над проєктами, пов’язаними з кібербезпекою.</p>
+         </div>
+         <div class="main-services-block">
+            <h2 class="main-services-subtitle">МОБІЛЬНІ ЗАСТОСУНКИ</h2>
+            <p class="main-services-text">Наші експерти з iOS та Android створюють рішення для мобільної безпеки, захисту мобільних даних і мобільної синхронізації, а також корпоративні рішення на базі MAM / MDM підходів.</p>
+         </div>
+         <div class="main-services-block">
+            <h2 class="main-services-subtitle">РОЗРОБКА ДРАЙВЕРІВ</h2>
+            <p class="main-services-text">Ми надаємо професійні послуги з розробки драйверів та інших компонентів ядра для всіх типів систем та пристроїв. За роки існування, Apriorit створив декількасот успішних низькорівневих проєктів з розробки драйверів для macOS, Linux та Windows.</p>
+        </div>
+        <div class="main-services-block">
+            <h2 class="main-services-subtitle">РОЗРОБКА ІГОР</h2>
+            <p class="main-services-text">Ми спеціалізуємося на усіх процесах, потрібних для розробки ігор,Ігровий контент, який ми створюємо, працює на iOS, Android пристроях, також ми займаємося реалізацією мультиплатформних додатків.  Для швидкої та безперебійної роботи програм використовуються Unity 3D, Firebase, JetBrains Rider.</p>
+        </div>
+    </section>
+    <section class="qa-section">
+        <h1 class="qa-title">З’явились питання?</h1>
+        <div class="qa-form-block">
+            <div class="qa-form-block-form">
+                <form class="qa-form" action="vacancy.html" th:method="POST" th:action="@{/post_qa_form}" th:object="${qa_form}">
+                    <input th:field="*{name}" class="input-form" type="text" id="name" name="fname" placeholder="Як до вас звертатися?">
+                    <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
+                    <input th:field="*{phone}" class="input-form" type="tel" id="phone" name="fphone" placeholder="Контактний номер телефону">
+                    <div style="color:red" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">Name Error</div>
+                    <input class="qa-btn" type="submit" value="Відправити">
+                </form>
+            </div>
+            
+        </div>
+        <div class="qa-text-block">
+            <p class="qa-text">Залиште свій номер телефону і наш фахівець зв’яжеться з Вами у найближчий час :) </p>
+        </div>
+        
+    </section>
+     <footer>
+        <div class="footer">
+            <div class="address">м. Київ, вул. Зоологічна, 5</div>
+            <div class="contacts">
+                <p class="phone">+380968800553</p>
+                <p class="mail">markelectronics@gmail.com</p>
+            </div>
+            <div class="social-networks">
+                <div class="social-item"><img th:src="@{/img/telegram.svg}" alt="telegram"></div>
+                <div class="social-item"><img th:src="@{/img/twitter.svg}" alt="twitter"></div>
+                <div class="social-item"><img th:src="@{/img/youtube.svg}" alt="youtube"></div>
+                <div class="social-item"><img th:src="@{/img/facebook.svg}" alt="facebook"></div>
+            </div>
+        </div>
+    </footer>
+<script th:src="@{/scripts/script.js}"> </script></body>
+</html>

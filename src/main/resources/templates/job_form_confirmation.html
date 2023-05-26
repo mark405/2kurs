@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вакансії</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+  <a href="/info" class="logo-href"><img class="logo" th:src="@{/img/main-logo.svg}" alt="logo"></a>
+  <nav class="nav">
+    <ul class="nav__links">
+      <li><a href="/about">Про нас</a></li>
+      <li><a href="/services">Послуги</a></li>
+      <li><a href="/vacancy">Вакансії</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <a class="lang" href="#">UA</a>
+</header>
+<section class="main-vacancy-section">
+  <h1 class="main-vacancy-title">ВАКАНСІЇ</h1>
+  <div class="main-vacancy-block">
+    <h2 class="main-vacancy-subtitle">Middle/Senior SEO Specialist</h2>
+    <p class="vacancy-descr">
+      м. Київ
+      <br>
+      Partly Remote
+      <br><br>
+      Досвід роботи на позиції SEO-фахівця від 1,5 року (від 2-2,5 року), бажано, в агентствах інтернет-маркетингу.
+      Досвід роботи з профільними сервісами: Google Analytics, Google Search Console, Google My Business, SE Ranking, Achrefs, Serpstat, Jetoctopus.
+      <br>
+      Наявність кейсів.
+      <br>
+      Знання алгоритмів пошукових систем.
+      Знання англійської мови на рівні не нижче В1, бажано В2.
+      Наявність сертифіката Google Analytics.
+
+    </p>
+  </div>
+  <div class="main-vacancy-block">
+    <h2 class="main-vacancy-subtitle">Junior C++ Developer</h2>
+    <p class="vacancy-descr">
+      м. Київ
+      <br>
+      Partly Remote
+      <br><br>
+      Досвід розробки на C++ від 1 року: мати досвід розробки на мові C++, включаючи роботу зі стандартними бібліотеками і знання принципів ООП.
+      <br>
+      Досвід роботи з терміналами такими як PuTTY та інші. Він повинен знати, які команди потрібно виконувати в терміналі та як керувати процесами, та засобами забезпечення безпеки, такими як TLS, SSL та інші протоколи шифрування.
+      <br>
+      Досвід використання засобів контролю версій (наприклад, Git).
+      <br>
+      Знання англійської мови на рівні, що дозволяє читати та розуміти технічну документацію
+    </p>
+  </div>
+</section>
+<section class="job-section">
+  <h1 class="job-title">Стань частиною крутої команди</h1>
+  <div class="job-form-block">
+    <h1 class="confirm-job-title">Ваше резюме розглядається!</h1>
+
+  </div>
+  <div class="job-text-block">
+    <p class="job-text">Ми обов’язково зв’яжемось з Вами в найближчий час :)</p>
+  </div>
+
+</section>
+<footer>
+  <div class="footer">
+    <div class="address">м. Київ, вул. Зоологічна, 5</div>
+    <div class="contacts">
+      <p class="phone">+380968800553</p>
+      <p class="mail">markelectronics@gmail.com</p>
+    </div>
+    <div class="social-networks">
+      <div class="social-item"><img th:src="@{/img/telegram.svg}" alt="telegram"></div>
+      <div class="social-item"><img th:src="@{/img/twitter.svg}" alt="twitter"></div>
+      <div class="social-item"><img th:src="@{/img/youtube.svg}" alt="youtube"></div>
+      <div class="social-item"><img th:src="@{/img/facebook.svg}" alt="facebook"></div>
+    </div>
+  </div>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <header>
+       <a href="/info" class="logo-href"><img class="logo" th:src="@{/img/main-logo.svg}" alt="logo"></a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><a href="/about">Про нас</a></li>
+                <li><a href="/services">Послуги</a></li>
+                <li><a href="/vacancy">Вакансії</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <a class="lang" href="#">UA</a>
+    </header>
+    
+    <section class="main-section">
+        <h1 class="title">Mark Electronics</h1>
+        <div class="company-descr-div">
+            <p class="company-descr">
+                        — динамічна ІТ-компанія, яка спеціалізується на наданні передових програмних рішень для підприємств будь-якого розміру
+            </p>
+        </div>
+        
+        <a class="a-more" href="/about"><button class="button-more">Дізнатись більше</button></a>
+    </section>
+
+    <section class="services-section">
+        <h1 class="services-title">ПОСЛУГИ</h1>
+        <div class="services-block">
+            <div class="services-block-element"><img class="web" th:src="@{/img/web-icon.svg}" alt="web"><p class="services-block-element-text">Веб-розробка</p></div>
+            <div class="services-block-element"><img class="mobile" th:src="@{/img/mobile-icon.svg}" alt="mobile"><p class="services-block-element-text">Мобільні застосунки</p></div>
+            <div class="services-block-element"><img class="drivers" th:src="@{/img/drivers-icon.svg}" alt="drivers"><p class="services-block-element-text">Розробка драйверів</p></div>
+            <div class="services-block-element"><img class="games" th:src="@{/img/games-icon.svg}" alt="games"><p class="services-block-element-text">Розробка ігор</p></div>
+        </div>
+        <div class="subtext-div">
+            <p class="subtext">Однією з ключових переваг Mark Electronics перед конкурентами ми вважаємо широкий спектр послуг та оперативність робочого процесу</p>
+        </div>
+        
+    </section>
+    <section class="achievements-section">
+        <h1 class="achievements-title">НАШІ ДОСЯГНЕННЯ</h1>
+        <div class="achievements-block">
+            <div class="achievements-block-element">
+                <h5 class="achievements-subtitle">80+</h5>
+                <p class="achievements-text">ЗАДОВОЛЕНИХ КЛІЄНТІВ</p>
+            </div>
+            <div class="achievements-block-element">
+                <h5 class="achievements-subtitle">3</h5>
+                <p class="achievements-text">РОКИ НА МІЖНАРОДНОМУ РИНКУ</p>
+            </div>
+            <div class="achievements-block-element">
+                <h5 class="achievements-subtitle">~90</h5>
+                <p class="achievements-text">ФАХІВЦІВ КОМПАНІЇ</p>
+            </div>
+            <div class="achievements-block-element">
+                <h5 class="achievements-subtitle">ТОП-10</h5>
+                <p class="achievements-text">IT-КОМПАНІЙ УКРАЇНИ</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+         <h1 class="partners-title">ПАРТНЕРИ</h1>
+        <div class="partners-block">
+            <div class="partners-block-element"><img class="partner-icon" th:src="@{/img/solar-icon.svg}" alt="partner"></div>
+            <div class="partners-block-element"><img class="partner-icon" th:src="@{/img/rozetka-icon.svg}" alt="partner"></div>
+            <div class="partners-block-element"><img class="partner-icon" th:src="@{/img/epam-icon.svg}" alt="partner"></div>
+            <div class="partners-block-element"><img class="partner-icon" th:src="@{/img/dl-icon.svg}" alt="partner"></div>
+        </div>
+        <div class="subtext-div">
+            <p class="subtext">
+                Mark Electronics співпрацює з компаніями, що займають лідируючі позиції на ринку України 
+            </p>
+        </div>
+    </section>
+
+    <section class="invite-section">
+        <div class="invite-title-div">
+            <h1 class="invite-title">ДОЛУЧАЙСЯ ДО НАШОЇ КОМАНДИ!</h1>
+            <p class="invite-text">Працюй в компанії висококваліфікованих спеціалістів на міжнародному рівні</p>
+        </div>
+        
+        <a class="a-invite" href="/vacancy"><button class="button-invite">Відправити резюме</button></a>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="address">м. Київ, вул. Зоологічна, 5</div>
+            <div class="contacts">
+                <p class="phone">+380968800553</p>
+                <p class="mail">markelectronics@gmail.com</p>
+            </div>
+            <div class="social-networks">
+                <div class="social-item"><img th:src="@{/img/telegram.svg}" alt="telegram"></div>
+                <div class="social-item"><img th:src="@{/img/twitter.svg}" alt="twitter"></div>
+                <div class="social-item"><img th:src="@{/img/youtube.svg}" alt="youtube"></div>
+                <div class="social-item"><img th:src="@{/img/facebook.svg}" alt="facebook"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
